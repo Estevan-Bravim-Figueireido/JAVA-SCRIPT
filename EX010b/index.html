@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+<body>
+    <h1>Passaporte</h1>
+
+   Digite o seu pais: <input  type="text" id="nomes">
+   <input type="button" value="verificar" onclick="verficar()">
+   <div id="res">
+
+   </div>
+
+
+   <script>
+    function verficar(){
+var ne=window.document.getElementById('nomes').value
+var res=window.document.getElementById('res')
+var nem=String(ne)
+res.innerHTML=`voce nasceu no ${ne}`
+if(nem=='Brasil'){
+    res.innerHTML+='<p>voce e brasileiro</p>'
+}else{
+    res.innerHTML+='<p>voce e estrangeiro</p>'
+}
+
+    }
+
+
+   </script>
+</body>
+</html>
